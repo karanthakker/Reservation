@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+boby{
+	width:auto;
+	padding:0px;
+	}
+	
+*{
+	width:auto;
+	padding:0px;
+	}
+#bodycl{
+	background-image:url(../repoimages/body-img.png);
+	background-repeat:repeat;
+	}	
+#wreppar{
+	width:960px;
+	height:auto;
+	margin:auto;
+	}
+#wreppar #loginbox{
+	width:300px;
+	height:300px;
+	margin:200px 330px;
+	float:left;
+	}
+	
+#wreppar #loginbox #singin{
+	width:300px;
+	height:30px;
+	margin-top:15px;
+	float:left;
+	line-height:30px;
+	}
+	
+#wreppar #loginbox #singin .login{
+	width:50px;
+	height:28px;
+	border-bottom:2px solid #666;
+	background-color:#CCCCCC;
+	border-right:2px solid #999;
+	margin-right:30px;
+	}
+#wreppar #loginbox #singin .cancel{
+	width:50px;
+	height:28px;
+	border-bottom:2px solid #666;
+	background-color:#CCCCCC;
+	border-right:2px solid #999;
+	}

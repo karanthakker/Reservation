@@ -1,0 +1,582 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:auto;
+	padding:0px;
+	}
+	
+*{
+	margin:auto;
+	padding:0px;
+	}
+	
+#wreppar{
+	width:1000px;
+	margin:auto;
+	height:auto;
+	}
+#wrepparmain{
+	width:1000px;
+	float:left;
+	height:auto;
+	border:1px solid #000;
+	}
+	
+#header{
+	width:1000px;
+	height:150px;
+	float:left;
+	}
+	
+#header #logo{
+	width:347px;
+	padding-left:3px;
+	height:150px;
+	float:left;
+	}
+	
+#header #logo img{
+	width:347px;
+	height:auto;
+	float:left;
+	}
+#header #name{
+	width:350px;
+	height:110px;
+	float:left;
+	font-family:Arial;
+	font-size:50px;
+	text-align:center;
+	color:#000000;
+	padding-top:40px;
+	}
+#header #login{
+	width:300px;
+	height:150px;
+	float:left;
+	}
+	
+#header #login #loginsearch{
+	width:300px;
+	float:left;
+	height:30px;
+	margin-top:30px;
+	}
+	
+#header #login #sing{
+	width:240px;
+	float:left;
+	height:30px;
+	margin-top:15px;
+	text-align:right;
+	}
+	
+#header #login #sing a{
+	color:#000;
+	text-decoration:underline;
+	}
+#header #login #sing a:hover{
+	color:#000;
+	text-decoration:underline;
+	}
+	
+#header #login #resister{
+	width:240px;
+	float:left;
+	height:30px;
+	text-align:right;
+	}
+	
+#header #login #resister a{
+	color:#000;
+	text-decoration:underline;
+	}
+#header #login #resister a:hover{
+	color:#000;
+	text-decoration:underline;
+	}
+/* 	
+.reservation tr th{
+	
+	text-align:left; 
+	font-size:14px;
+}	
+ */
+#menu{
+	width:1000px;
+	background-color:#658CD9;
+	height:60px;
+	border:1px solid #000;
+	float:left;
+	}
+	
+#menu ul{
+	width:1000px;
+	height:30px;
+	float:left;
+	list-style:none;
+	margin-top:15px;
+	}
+#menu ul li{
+	list-style:none;
+	width:145px;
+	height:25px;
+	line-height:25px;
+	background-color:#FFF;
+	border:2px solid #999;
+	margin-left:35px;
+	padding-left:5px;
+	float:left;
+	}
+	
+#menu ul li a{
+	text-decoration:none;
+	color:#000000;
+	}
+	
+#menu ul li a:hover{
+	text-decoration:none;
+	color:#000000;
+	}
+	
+#mideal{
+	width:1000px;
+	height:auto;
+	float:left;
+	}
+	
+#mideal #box{
+	width:580px;
+	margin:15px 5px 10px 20px;
+	border:1px solid #000;
+	background-color:#B1B17D;
+	float:left;
+	padding:40px 30px;
+	height:150px;
+	}
+	
+#mideal #box .imglink{
+	width:150px;
+	height:150px;
+	float:left;
+	margin:0px 21px;
+	}	
+#mideal #box .imglink img{
+	width:150px;
+	height:100px;
+	float:left;
+	}
+	
+#mideal #box .imglink .stationlink{
+	width:150px;
+	height:auto;
+	text-align:center;
+	float:left;
+	font-family:Arial;
+	font-size:20px;
+	color:#000000;
+	text-decoration:underline;
+	margin-top:20px;
+	}
+#mideal #box .imglink .stationlink a{
+	text-decoration:none;
+	color:#000000;
+	}
+	
+#mideal #box .imglink .stationlink a:hover{
+	text-decoration:none;
+	color:#000000;
+	}
+#mideal #loginform{
+	width:280px;
+	height:231px;
+	margin-top:15px;
+	margin-left:10px;
+	border:1px solid #CCC;
+	float:left;
+	background-color:#C0C0C0;
+	}
+	
+#mideal #loginform .user{
+	width:250px;
+	height:30px;
+	float:left;
+	margin:10px 15px 0px 15px;
+	}
+	
+#mideal #loginform .buttonbox{
+	width:280px;
+	height:30px;
+	float:left;
+	}	
+#mideal #loginform .buttonbox .button{
+	width:70px;
+	height:30px;
+	text-align:center;
+	margin-left:90px;
+	border-bottom: 2px solid #999;
+	border-right: 2px solid #999;
+	}
+	
+#mideal #loginform .forword{
+	width:250px;
+	height:30px;
+	margin-top:10px;
+	float:left;
+	line-height:30px;
+	padding-left:30px;
+	}
+	
+#mideal #loginform .forword img{
+	width:25px;
+	height:25px;
+	float:left;
+	margin-right:5px;
+	}
+#mideal #loginform .forword a{
+	text-decoration:underline;
+	color:#000;
+	}
+#mideal #loginform .forword a:hover{
+	text-decoration:underline;
+	color:#000;
+	}	
+#mideal #box2{
+	width:850px;
+	float:left;
+	height:200px;
+	border:1px solid #000;
+	background-color:#F2A63F;
+	margin:5px 74px;
+	}
+	
+#mideal #box2 #blog1{
+	width:160px;
+	height:160px;
+	padding: 0px 20px;
+	margin-left:30px;
+	margin-top:20px;
+	float:left;
+	}
+	
+#mideal #box2 h4{
+	color:#000000;
+	width:160px;
+	font-family:Arial;
+	font-size:18px;
+	float:left;
+	font-weight:bold;
+	}
+	
+#mideal #box2 ul{
+	width:160px;
+	list-style:none;
+	}
+	
+#mideal #box2 ul li{
+	width:160px;
+	float:left;
+	list-style:none;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	font-family:Arial;
+	color:#000000;
+		}
+#mideal #box2 ul li a{
+	text-decoration:underline;
+	color:#000000;
+	}
+#mideal #box2 ul li a:hover{
+	text-decoration:underline;
+	color:#000000;
+	}
+	
+#mideal #box2 #blog2{
+	width:310px;
+	height:160px;
+	margin-top:20px;
+	float:left;
+	padding: 0px 20px;
+	border-left:2px solid #000;
+	border-right:2px solid #000;
+	}
+	
+#mideal #box2 #blog2 #apps{
+	width:310px;
+	float:left;
+	height:80px;
+	}
+#mideal #box2 #blog2 #apps img{
+	width:80px;
+	height:80px;
+	float:left;
+	margin-left:100px;
+	}
+#mideal #box2 #blog2 #download{
+	text-align:center;
+	float:left;
+	font-family:Arial;
+	font-size:16px;
+	width:310px;
+	height:30px;
+	line-height:30px;
+	}
+#mideal #box2 #blog2 #download a{
+	text-decoration:underline;
+	color:#000;
+	}
+	
+#mideal #box2 #blog2 #download a:hover{
+	text-decoration:underline;
+	color:#000;
+	}
+#mideal #box2 #blog3{
+	width:160px;
+	height:160px;
+	float:left;
+	margin-top:20px;
+	padding: 0px 20px;
+	margin-right:30px;
+	}
+	
+
+
+
+#mideal #mapbox{
+	width:920px;
+	height:auto;
+	margin:10px 40px;
+	float:left;
+	}
+	
+#mapbox #mapasearch{
+	width:920px;
+	margin-bottom:10px;
+	height:30px;
+	float:left;
+	}
+	
+#mapbox #mapasearch #searchayea{
+	width:320px;
+	height:30px;
+	float:left;
+	}
+	
+#mapbox #mapasearch #searchayea img{
+	width:30px;
+	height:30px;
+	float:right;
+}
+
+#mapbox #mapasearch #advancesearch{
+	width:180px;
+	height:30px;
+	float:left;
+	}
+	
+#mapbox #mapasearch #advancesearch #serchbu{
+	width:170px;
+	height:25px;
+	border-bottom:2px solid #999;
+	border-right:2px solid #999;
+	float:right;
+	background-color:#CCC;
+	}
+	
+#mapbox #mapasearch #distence{
+	width:300px;
+	height:30px;
+	float:left;
+	padding-left:100px;
+	}
+	
+#mapbox #googlemap{
+	width:920px;
+	float:left;
+	height:400px;
+	}
+	
+	
+	
+#mideal #userbox{
+	width:960px;
+	height:180px;
+	float:left;
+	margin:0px 20px;
+	margin-bottom:20px;
+	border-bottom:2px solid #000;
+	}
+	
+#mideal #userbox #heading{
+	width:920px;
+	height:30px;
+	line-height:30px;
+	font-family:Arial;
+	font-size:24px;
+	color:#000000;
+	text-decoration:underline;
+	font-weight:bold;
+	padding-left:40px;
+	margin-bottom:30px;
+	}
+	
+.username{
+	width:160px;
+	height:30px;
+	float:left;
+	line-height:30px;
+	margin-right:10px;
+	margin-left:10px;
+	}
+	
+.img{
+	width:25px;
+	height:25px;
+	float:left;
+	margin-left:10px;
+	margin-right:10px;
+	}
+	
+.textinput{
+	width:200px;
+	height:30px;
+	float:left;
+	}
+	
+#mideal #userbox2{
+	width:960px;
+	height:auto;
+	float:left;
+	margin:0px 20px;
+	margin-bottom:20px;
+border-bottom: 2px solid #000;
+	}
+	
+#mideal #userbox2 .parsonla{
+	width:200px;
+	height:50px;
+	float:left;
+	margin-left:20px;
+	}
+	
+#mideal #userbox2 #head{
+	width:920px;
+	height:30px;
+	line-height:30px;
+	font-family:Arial;
+	font-size:24px;
+	color:#000000;
+	text-decoration:underline;
+	font-weight:bold;
+	padding-left:20px;
+	margin-bottom:30px;
+	}
+	
+.line{
+	width:920px;
+	float:left;
+	height:30px;
+	}
+	
+.line .adressname{
+	width:140px;
+	height:30px;
+	line-height:30px;
+	float:left;
+	text-align:right;
+	padding-right:10px;
+	}
+	
+.savebuutoon{
+	width:960px;
+	margin:40px 20px;
+	float:left;
+	height:40px;
+	}
+	
+.savebuutoon .save{
+	width:140px;
+	height:38px;
+	background-color:#CCC;
+	border-bottom:2px solid #333;
+	float:left;
+	margin-right:40px;
+	}
+	
+.savebuutoon .Cancel{
+	width:80px;
+	height:38px;
+	background-color:#CCC;
+	border-bottom:2px solid #333;
+	float:left;
+	}
+	
+#financial{
+	width:960px;
+	margin:20px 20px;
+	height:auto;
+	float:left;
+	}
+	
+#financialcard{
+	width:960px;
+	height:auto;
+	float:left;
+	}
+	
+#vachile{
+	width:960px;
+	height:auto;
+	 
+	float:left;
+	margin:0px 20px;
+	margin-bottom:20px;
+	border-bottom:2px solid #000;
+	
+	}
+	
+#mideal #vachile .adduser{
+	width:400px;
+	height:30px;
+	margin-bottom:20px;
+	padding-left:200px;
+	}
+#mideal #vachile #head{
+	width:920px;
+	height:30px;
+	line-height:30px;
+	font-family:Arial;
+	font-size:24px;
+	color:#000000;
+	text-decoration:underline;
+	font-weight:bold;
+	padding-left:20px;
+	margin-bottom:30px;
+	}	
+#mideal #vachile #head1{
+	width:350px;
+	height:30px;
+	margin-bottom:20px;
+	padding-left:250px;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:24px;
+	margin-top:15px;
+	}
+#vachile #nikname{
+	width:500px;
+	height:30px;
+	margin-bottom:10px;
+	padding-left:100px;
+	font-size:16px;
+	margin-top:5px;
+	font-family:Arial;
+	float:left;
+	}
+	
+
+
+.clear {clear:both;}
+.m15 {clear:both;margin:15px;}

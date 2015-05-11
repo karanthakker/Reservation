@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- @Author Karan Thakker -->
+<!-- This is used for quartz scheduler i.e. reminding the user about his reservation -->
+
+ <bean id="databaseTrigger" class="com.uottawa.seccharge.service.Trigger" />
+
+ <!-- specifying class and method that is going to be called on a specified 
+  time basis -->
+ <bean id="myJob"
+  class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+  <property name="targetObject" ref="databaseTrigger" />
+  <property name="targetMethod" value="SendReminderNotification" />
+ </bean>
+
+ <!-- simple trigger specify repeat interval and delay time -->
+ <bean id="simpleTrigger"
+  class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+  <property name="jobDetail" ref="myJob" />
+  
+  <!-- The value set for quartz scheduler here is 30 minutes prior to reservation -->
+  <!-- This value is supposed to be set in terms of milliseconds so 1800000 = 1000*60*30-->
+  <!-- Also if reminder time prior to the reservation time is to be changed, change the value in the value id below -->
+  <property name="repeatInterval" value="89500" />
+  <property name="startDelay" value="1000" />
+ </bean>
+
+ <!-- scheduler factory bean to bind,the executing code and time intervals 
+  together -->
+ <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+  <property name="jobDetails">
+   <list>
+    <ref bean="myJob" />
+   </list>
+  </property>
+  <property name="triggers">
+   <list>
+    <ref bean="simpleTrigger" />
+   </list>
+  </property>
+ </bean>
+
+</beans>

@@ -1,0 +1,172 @@
+/**
+=========================
+Author custom style
+=========================
+**/
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  color: #555;
+  font-family: Vegur;
+}
+
+
+#main_content {
+	margin-top:8%;
+}
+
+#logo, #logo:visited {
+    background: url("http://web5.uottawa.ca/assets-templates/3/modules/globalBanner/img/uOlogo-sprite-png24.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 41px;
+    width: 153px;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+#logo:hover{
+	background-position:0 -44px;
+}
+
+.static-splash-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 1;
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 470px;
+}
+
+.lt-ie9 .static-splash-overlay {
+  background: none transparent scroll repeat 0% 0%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5000000,endColorstr=#A5000000);
+  zoom: 1;
+}
+
+#uottawa-global-footer-swoosh {
+  position: absolute;
+  bottom: 0;
+}
+
+.static-splash-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 550px;
+}
+
+.static-splash-container #lang-selection {
+  width: 50%;
+  overflow: hidden;
+  background: #777;
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.35);
+  display: table;
+  margin:0 auto 30px;
+  color:#fff;
+}
+
+.lt-ie9 .static-splash-container #lang-selection {
+  background: none transparent scroll repeat 0% 0%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);
+  zoom: 1;
+}
+
+.static-splash-container #lang-selection form {
+  width: 50%;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  display: table-cell;
+  vertical-align: top;
+  padding:15px;
+}
+
+
+.static-splash-container img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+  width: 50%;
+}
+
+.static-splash-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.static-splash-table {
+  display: table;
+  height: 100%;
+  min-height: 600px;
+  width: 100%;
+}
+
+.navbar-inner {min-height:60px;}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+	margin-top:10px;
+	font-size:1.2em;
+}
+
+/*==============*/
+
+a, a:visited {
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.mt25 {margin-top:25px;}
+
+.container-fluid {
+	max-width:1024px;
+	margin:0 auto;
+}
+
+header {
+	background:url("../images/header_back.png") repeat-x;
+	background-color:#333;
+}
+
+.fset {
+	padding:10px;
+	border:1px solid #ccc;
+}
+
+.fset legend {
+	font-size:22px;
+	color:#555;
+	padding:10px;
+}
+
+.fset .table td {
+	border:0px;
+	line-height:50px;
+}
+
+.fset .table td a {
+	font-size:18px;
+}
+
+.form-horizontal input[type=text],
+.form-horizontal input[type=password],
+.form-horizontal textarea {width:50%;height:30px;}
+.error_form {color:#b94a48;}
+

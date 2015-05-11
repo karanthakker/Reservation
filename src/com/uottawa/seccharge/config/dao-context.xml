@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+	http://www.springframework.org/schema/data/jpa 
+	http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+	<jpa:repositories base-package="com.uottawa.seccharge.repository" ></jpa:repositories>
+	<context:component-scan base-package="com.uottawa.seccharge.dataobjects"></context:component-scan>
+	<context:component-scan base-package="com.uottawa.seccharge.dao"></context:component-scan>
+
+	<context:annotation-config></context:annotation-config>
+
+	<!--<jee:jndi-lookup jndi-name="jdbc/spring" id="dataSource"
+		expected-type="javax.sql.DataSource">
+	</jee:jndi-lookup>
+
+	 <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"></property>
+		<property name="password" value="root"></property>
+		<property name="username" value="mehdi"></property>
+	</bean>-->
+
+	<!-- Database credentials -->
+	<bean id="springDataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+		<property name="username" value="karan" />
+		<property name="password" value="karan" />
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+	</bean>
+
+	<bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplate">
+		<constructor-arg ref="springDataSource" />
+	</bean>
+	
+<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="springDataSource" />
+		<property name="persistenceXmlLocation" value="/WEB-INF/persistence.xml" />
+		<property name="persistenceUnitName" value="springJpaPersistenceUnit" />
+	</bean>
+	
+<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+	
+	<!-- 	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">create</prop> 
+			</props>
+			 
+		</property>
+				
+		<property name="packagesToScan">
+			<list>
+				<value>com.uottawa.seccharge.dao</value>
+			</list>
+		</property>
+
+	</bean> 
+
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>-->
+	<tx:annotation-driven />
+</beans>

@@ -1,0 +1,5 @@
+<dataset>
+    <SALUTATIONS id="1" type="1" remarks="Foo" />
+    <SALUTATIONS id="2" type="2" remarks="Bar"/>
+</dataset>
+
